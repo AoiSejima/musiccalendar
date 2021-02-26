@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "iA Writer Quattro S Bold Italic";
+    src: url("./assets/iAWriterQuattroS/iAWriterQuattroS-BoldItalic.woff2") format("woff2"); 
+}
+
+@font-face {
+    font-family: "iA Writer Quattro S Regular";
+    src: url("./assets/iAWriterQuattroS/iAWriterQuattroS-Regular.woff2") format("woff2"); 
+}
+
+@font-face {
+    font-family: "Domain Diaplay Black";
+    src: url("./assets/DomaineDisplayTest/domaine-display-test-black.woff") format("woff"); 
+}
+
+body {
+    margin: 0 auto;
+    background: rgb(255, 233, 233);
+}
+
+h1 {
+    font-family: "Domain Diaplay Black";
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+    margin-top: 3rem;
+}
+
+a h2 {
+    position: relative;
+    font-family: "iA Writer Quattro S Bold Italic";
+    color: white;
+    font-size: 11pt;
+    line-height: 15pt;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2.2rem;
+    height: 30%;
+}
+
+a h3 {
+    font-family: "iA Writer Quattro S Regular";
+    color: white;
+    text-align: center;
+    font-size: 9pt;
+    line-height: 11pt;
+    height: 30%;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0.5rem;
+    margin-left: 6rem;
+    padding-bottom: 6rem;
+}
+
+.hover {
+    width: 10rem;
+    height: 10rem;
+    margin: 1.5rem;
+    padding: 6pt;
+    transition: all .5s;
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
+}
+
+.hover:hover {
+    margin-top: -1rem;
+}
+
+h2:hover {
+    font-size: 18pt;
+    line-height: 25pt;
+    margin-top: 2.2rem;
+    height: 30%;
+}
+
+#redorange {
+    background: linear-gradient(270deg, #ff2a2a, #ff8900);
+    background-size: 400% 400%;
+}
+
+#orangepurple {
+    background: linear-gradient(270deg, #ff7e42, #5a6cff);
+    background-size: 400% 400%;
+}
+
+#pinkskyblue {
+    background: linear-gradient(270deg, #ff9c9c, #1ea4ff);
+    background-size: 400% 400%;
+}
+
+@keyframes animatetop {
+    from {top: 20rem; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@media only screen and (max-width: 812px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    
+    a h2 {
+        font-size: 8pt;
+        line-height: 12pt;
+        margin-top: 1rem;
+        height: 30%;
+    }
+    
+    a h3 {
+        font-size: 6pt;
+        line-height: 7pt;
+        height: 30%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.3rem;
+        margin-left: 0.9rem;
+        padding-bottom: 2rem;
+    }
+    
+    .hover {
+        width: 5rem;
+        height: 5rem;
+        margin: 0.5rem;
+        padding: 6pt;
+        transition: all .5s;
+    }
+    
+    .hover:hover {
+        margin-top: -1rem;
+    }
+    
+    h2:hover {
+        font-size: 18pt;
+        line-height: 25pt;
+        margin-top: 2.2rem;
+        height: 30%;
+    }
+}
