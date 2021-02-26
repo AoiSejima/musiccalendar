@@ -141,7 +141,7 @@ h2:hover {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 0.3rem;
-        margin-left: 0.9rem;
+        margin-left: 1rem;
         padding-bottom: 2rem;
     }
     
